@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:5000/api/students";
+const API_URL = "https://student-management-system-dpe5.onrender.com/api/students";
 
 const form = document.getElementById("student-form");
 const studentList = document.getElementById("student-list");
