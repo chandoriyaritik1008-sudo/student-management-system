@@ -1,0 +1,180 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f3f6fb;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(135deg, #1d4ed8, #4338ca);
+  color: white;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #e0e7ff;
+  font-size: 15px;
+}
+
+main {
+  width: min(1100px, 92%);
+  margin: 28px auto;
+  display: grid;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 5px 20px rgba(31, 41, 55, 0.07);
+}
+
+.card h2 {
+  color: #1d4ed8;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 600;
+  align-self: end;
+}
+
+input,
+select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+form button {
+  grid-column: span 2;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+#cancel-btn {
+  background: #64748b;
+}
+
+#cancel-btn[hidden] {
+  display: none;
+}
+
+#message {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+#search {
+  margin-bottom: 16px;
+}
+
+#student-count {
+  margin-bottom: 12px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+th,
+td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+th {
+  background: #eff6ff;
+  color: #1e40af;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+td button {
+  padding: 8px 10px;
+  margin: 2px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  main {
+    width: 94%;
+    margin: 16px auto;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form button {
+    grid-column: span 1;
+  }
+}
